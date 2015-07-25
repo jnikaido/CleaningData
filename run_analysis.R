@@ -151,4 +151,4 @@ tidy_dataset <-
 tidy_dataset <- merge(tidy_dataset,activityType,by='activityId',all.x=TRUE)
 
 # export the tidy_dataset to a file
-write.table(tidy_dataset, './tidyData.txt',row.names=TRUE,sep='\t')
+write.table(tidy_dataset, './tidyData.txt',row.name=FALSE,sep='\t')
